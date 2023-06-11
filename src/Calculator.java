@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 class Calculator {
     private double num1;
@@ -58,7 +59,8 @@ class Calculator {
 	        }
 	
 	        if (isValidOperation) {
-	            System.out.println("\nResult: " + result);
+	        	DecimalFormat df = new DecimalFormat("#.###");
+	            System.out.println("Result: " + df.format(result));
 	        }
 	
 //	        scanner.close();
